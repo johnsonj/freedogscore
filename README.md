@@ -1,6 +1,6 @@
 # FreeDogScore
 
-This repo contains the open source rewrite of [FreeDogScore.com](https://freedogscore.com). The goal is to replace the Rails/Postgres application with cloud functions that generate the static website.
+This repo contains the open source rewrite of [FreeDogScore.com](https://freedogscore.com). The goal is to replace the Rails/Postgres application with [Cloud Functions](https://cloud.google.com/functions/) that generate the static website.
 
 # Development
 
