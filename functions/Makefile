@@ -36,4 +36,7 @@ godev: FORCE
 test: js localgo
 	node testserver.js
 
+deploy: all
+	cd infrastructure && terraform apply
+
 FORCE:

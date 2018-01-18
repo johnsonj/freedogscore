@@ -8,8 +8,9 @@ This repo contains the open source rewrite of [FreeDogScore.com](https://freedog
 - Linux environment
 - [Golang 1.9+](https://golang.org/)
 - [Node 9.4+](https://nodejs.org/en/) (only needed for deployment)
-- [gcloud](https://cloud.google.com/sdk/downloads)
+- [gcloud sdk](https://cloud.google.com/sdk/downloads)
 - [Google Cloud Project](https://cloud.google.com)
+- [Terraform 0.11.0+](https://terraform.io) (only needed for deployment)
 
 ## Running Locally
 ```bash
@@ -22,10 +23,5 @@ go run main.go
 
 ```bash
 cd $(go env GOPATH)/src/github.com/johnsonj/freedogscore/functions
-make
-bucket=gs://fds-$(date +%s)
-# create the bucket once and re-use it in the future 
-gsutil mb $bucket
-gsutil cp function.zip $bucket
-gcloud beta functions deploy --trigger-http --source $bucket/function.zip fds --stage-bucket $bucket
+make deploy
 ```
