@@ -6,6 +6,6 @@
   "author": "",
   "license": "Apache 2.0",
   "dependencies": {
-    "execer": "../../../GoogleCloudPlatform/cloud-functions-go/node_modules/execer"
+    "execer": "../vendor/github.com/GoogleCloudPlatform/cloud-functions-go/local_modules/execer"
   }
 }
