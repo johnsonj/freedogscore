@@ -1,8 +1,4 @@
 provider "google" {
-  // TODO: unreleased as of 1/18/2017:
-  // - build provider from 3e900a3
-  // - move into $PWD/.terraform/plugins/linux_amd64/terraform-provider-google_v1.5.0_x4
-  // - update $PWD/.terraform/plugins/linux_amd64/lock.json with sha256sum terraform-provider-google_v1.5.0_x4
   version = "v1.5.0"
 
   region  = "us-central1"
